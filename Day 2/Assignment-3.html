@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <h1>Here we can get the current date in dd/mm/yyyy, dd-mm-yyyy format!!</h1>
+    </head>
+    <body>
+        <script>
+// use Date() function for current get date 
+           var todays_date = new Date(); 
+// get date from 
+           var dd    = todays_date.getDate();
+// get month 
+// January come as 0 so we increase it with 1
+           var mm    = todays_date.getMonth()+1; 
+// get year
+           var yyyy = todays_date.getFullYear();
+// if date is less than 10 so we concat with 0
+           if(dd < 10)
+           {
+                dd ='0' + dd
+           } 
+// if month is less than 10 so we concat with 0
+           if(mm < 10)
+           {
+                mm='0' + mm
+           }  
+           var todays_date = dd+'/'+mm+'/'+yyyy+" ,"+dd+"-"+mm+"-"+yyyy;
+           document.write(todays_date);
+
+        </script>
+
+    </body>
+</html>
