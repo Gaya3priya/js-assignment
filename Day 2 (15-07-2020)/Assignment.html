@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-2 JS Assignment😊</title>
+    <h1>ASSIGNMENT-DAY 2😊</h1>
+    <h3>Question 1:</h3>
+    <h3>write a js code which takes input from the user and logs it in the console.</h3>
+    
+</head>
+<body>
+    <script>
+        let customerName =prompt("Please enter your name :");
+        console.log(customerName);
+    </script>
+    <p><mark>Hint:</mark>If you want to see what you have entered.Then press "F12" and under the console you can the see the output!!😄</p>
+    <h3>Question 2:</h3>
+    <h3>Explain methods of string and array.</h3>
+    <script>
+        let str="string"
+        output1=str.bold();
+        console.log(output1);
+        output2=str.fontcolor("blue");
+        console.log(output2);
+        output3=str.substr(2);
+        console.log(output3);
+        output4=str.includes("str");
+        console.log(output4);
+        output5=str.repeat(2);
+        console.log(output5);
+        output6=str.replace("s","S");
+        console.log(output6);
+        str1="Hello"
+        output7=str1.strike();
+        console.log(output7);
+        output8=str1.small();
+        console.log(output8);
+        output9=str1.italics();
+        console.log(output9);
+        let ar1= ["Banana", "Orange", "Apple", "Mango"];
+        aout=ar1.toString();
+        console.log(aout);
+        aout1=ar1.join('*');
+        console.log(aout1);
+        aout2=delete ar1[0];
+        console.log(aout2);
+        aout3=ar1.splice(2, 0, "Lemon", "Kiwi");
+        console.log(aout3);
+        aout4=ar1.sort();
+        console.log(aout4);
+        let numbers=[4,9,16,25];
+        aout5=numbers.map(Math.sqrt);
+        console.log(aout5);
+    </script>
+    <h3>1.string methods:-</h3>
+    <p><b>bold() method:</b>The bold() method is used to display a string in bold. This method returns the string embedded in the b tag.</p>
+    <p><b>fontcolor() method:-</b>The fontcolor() method is used to display a string in a specified color. This method returns the string embedded in the font tag</p>
+    <p><b>substr() method:-</b>The substring() method extracts the characters from a string, between two specified indices, and returns the new sub string.</p>
+    <p><b>includes() method:-</b> includes() method determines whether a string contains the characters of a specified string.<mark>Note:</mark> The includes() method is case sensitive.</p>
+    <p><b>repeat() method:-</b>The repeat() method returns a string that has been repeated a desired number of times.</p>
+    <p><b>replace() method:-</b>The replace() method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.</p>
+    <p><b>strike() method:-</b>The strike() method is used to display a string that is struck out. This method returns the string embedded in the strike tag.</p>
+    <p><b>small() method:-</b>The small() method is used to display a string in a small font. This method returns the string embedded in the small tag</p>
+    <p><b>italics() method:-</b>italics() is a string method that is used to create the HTML i tag element. Because the italics() method is a method of the String object, it must be invoked through a particular instance of the String class.</p>
+    <h3>2.Array methods:-</h3>
+    <p><b>toString() method:-</b>The toString() method converts an array to a string of (comma separated) array values.</p>
+    <p><b>join() method:-</b>The join() method also joins all array elements into a string.</p>
+    <p><b>delete() method:-</b>Since JavaScript arrays are objects, elements can be deleted by using the JavaScript operator "delete"</p>
+    <p><b>splice() method:-</b>The splice() method can be used to add new items to an array</p>
+    <p><b>sort() method:-</b>The sort() method sorts the items of an array.</p>
+    <p><b>map() method:-</b>The map() method creates a new array with the results of calling a function for every array element.</p>
+    <p><b>If you want to see more methods on arrays simply look at the console..👍</b></p>
+    <h3>Question 3:</h3>
+    <h3>Ask the user if he is 21 or above and log the value 'can drink' or 'can drink'</h3>
+    <script>
+        ask=confirm("Please confirm that your age is 21 or above!.If your age is 21 or above then click 'OK' otherwise click 'cancel'");
+        if (ask==true){
+            console.log("You Can drink!");
+        }
+        else{
+            console.log(" You Can't drink!");
+        }
+    </script>
+    <p><mark>Hint:</mark>You can see the output based on the action you did when you press "F12"!! </p>
+</body>
+</html>
