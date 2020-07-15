@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>DAY-1(JAVASCRIPT ESSENTIALS)😃</title>
+       
+    <body>
+        <h1>About some console methods in javascript😊</h1>
+        <h2>1)console.log():-</h2>
+        <script>console.log("LetsUpgrade");</script>
+        <p>Mainly used to log(print) the output to the console.</p>    
+        <h2>2)console.error():-</h2>
+        <script>console.error("This is a error");</script>
+        <p>Used to log error message to the console.</p>
+        <h2>3)console.warn():-</h2>
+        <script>console.warn("This is a warning")</script>
+        <p>Used to log warning message to the console.</p>
+        <h2>4)console.time() & console.timeEnd():-</h2>
+        <script>
+        console.time("Time taken");
+        console.log("want to see the time taken for this msg!");
+        console.timeEnd("Time taken")
+        </script>
+        <p>Whenever we want to know the amount of time spend by a block or a function,
+           we can make use of the time() and timeEnd() methods provided by the javascript console object.
+        </p>
+        <h2>5)console.table():-</h2>
+        <script>console.table({'a':1, 'b':2}); </script>
+        <p>This method allows us to generate a table inside a console.</p>
+        <h2>6)console.count():-</h2>
+        <script>for(let i=0;i<5;i++){ 
+            console.count(i); 
+        }  </script>
+        <p>This method is used to count the number that the function hit by this counting method.</p>
+        <h2>7)console.group() & console.groupEnd():-</h2>
+        <script>
+            console.group('started!'); 
+                console.warn('warning!'); 
+                console.error('error here'); 
+                console.log('A simple statement!'); 
+            console.groupEnd('Ended!'); 
+            console.log('new section'); 
+        </script>
+        <p>group() and groupEnd() methods of the console object allows us to group 
+        contents in a separate block, which will be indented.</p>
+    </body>
+</html>    

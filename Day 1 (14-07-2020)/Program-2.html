@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Day-1(JS ESSENTIALS)😃</title>
+    </head>
+    <body>
+        <h1>Differnces between var,let and const with some examples🤔</h1>
+        
+        <script>
+            var name="Priya";
+            var course="JavaScript";
+            var marks=97;
+            console.log(name);
+            console.log(course);
+            console.log(marks);
+            {
+                let name="Gayathri";
+                console.log(name);
+            }
+            console.log(name);
+            const age=18;
+            console.log(age);
+            age=19;
+            console.log(age);
+        </script>
+        <p>var and let are both used for variable declaration in javascript but the
+             difference between them is that var is function scoped and let is block scoped.
+        </p>
+        <h2>var:-</h2>
+        <p>var is function scoped.It means like global variable.
+           var variables can be updated and re-declared within its scope.
+           var variables are initialized with undefined.
+           var can be declared without being initialized.
+        </p>
+        <h2>let:-</h2>
+        <p>let is block scoped.It means like local variable.
+            It can be said that a variable declared with var is defined throughout the program as compared to let.
+            let variables can be updated but not re-declared.
+            let can be declared without being initialized
+        </p>
+        <h2>const:-</h2>
+        <p>const is block scoped.
+           const variables can neither be updated nor re-declared.
+           const must be initialized during declaration.
+        </p>
+    </body>
+</html>
