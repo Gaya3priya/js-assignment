@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-3 Assignment😊</title>
+    <h1>Assignment😊</h1>
+    <h2>Question-1:</h2>
+    <h3>Take a number from the user and write a function which checks whether the number is even or odd.
+        Assign the result to a variable and log that variable to the console.</h3>
+    <p><mark>Hint:</mark>If you want to see the output then press F12 key and under the console you can see the output!!</p> 
+    
+</head>
+<body>
+    <script>
+    function evenOrOdd(number) {
+      if (number % 2 === 0) {
+         return `The number entered is ${number} and Number is even`;
+      }
+
+      return `The number entered is ${number} and Number is odd`;
+    }
+    num= +prompt("Enter number:");
+    result=evenOrOdd(num);
+    console.log(result);
+    </script> 
+    <h2>Question-2</h2>
+    <h3>Write a program which will take OS name and version from the user seperated by a space.
+    Then log the OS name and version on the console.</h3>
+    <script>
+        user_input= prompt("Enter your OS name and version name separated by a space between them");
+        user=user_input.split(" ")
+        console.log(`The OS name is ${user[0]} and version is ${user[1]}`);
+    </script>
+    <h2>Question-3</h2>
+    <h3>Write a program to take marks as input from the user and grade him accordingly.Use conditional statements.Also the same code using switch or ternary.</h3>
+    <script>
+    console.log("Using IF-ELSE!!")    
+    let marks= +prompt("Enter your marks:");
+    if (marks>=90){
+         console.log(`Marks are ${marks}  and grade is A` );
+    }
+    else if (marks>=80 && marks<90){
+        console.log(`Marks are ${marks}  and grade is B`);
+    }
+    else if (marks>=70 && marks<80){
+        console.log(`Marks are ${marks}  and grade is c`);
+    }
+    else if (marks>=60 && marks<70){
+        console.log(`Marks are ${marks}  and grade is D`);
+    }
+    else if (marks>=50 && marks<60){
+        console.log(`Marks are ${marks}  and grade is E`);
+    }
+    else{
+        console.log(`Marks are ${marks}  and grade is FAIL`)
+    }
+    console.log("Using Ternary!!");
+    let output=(marks>=90) ? `Marks are ${marks}  and grade is A`:
+               (marks>=80 && marks<90) ? `Marks are ${marks}  and grade is B`:
+               (marks>=70 && marks<80) ? `Marks are ${marks}  and grade is C`:
+               (marks>=60 && marks<70) ? `Marks are ${marks}  and grade is D`:
+               (marks>=50 && marks<60) ? `Marks are ${marks}  and grade is E`:
+               `Marks are ${marks}  and grade is FAIL`
+    console.log(output);
+    </script>
+
+          
+</body>
+</html>
