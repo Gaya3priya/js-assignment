@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote generator</title>
+</head>
+<body>
+    <h1>Simple Quote generator😁</h1>
+    <div id="QuoteDisplay">
+        <!-- Quotes will display here -->
+
+    </div>
+    <h2>  </h2>
+    <button onclick="newQuote()">New Quote👍</button>
+
+    <script >
+    let quotes=[
+        'The future depends on what we do in the present. - Mahatma Gandhi\n',
+        'Try not to become a man of success,but rather try to become a man of value. - Albert Einstein\n',
+        "It\'s not about how much you do,but how much love you put into what you do that counts. - Mother Teresa\n",
+        "I never lose.I either win or learn. - Nelson Mandela\n",
+        "Dream is not the thing you see in sleep but is that doesn't let you sleep. - Dr.Abdul Kalam\n",
+        "Talk to yourself at least once in a Day.. Otherwise you may miss a meeting with an EXCELLENT person in this world. - Swami Vivekananda\n ",
+        "Quite people have the loudest minds. - Stephen Hawking\n",
+        "Do not wait for someone else to come and speak for you.It's you who can change the world. - Malala Yousafzai\n",
+        "The true teachers are those who help us think for ourselves. - Dr.Sarvepalli Radhakrishnan\n",
+        "A goal should scare you a little, and excite you A LOT. - Joe Vitale",
+        "Don't play the game.Be the game changer. - Unknown ",
+        "Everything in the world changes but the word 'change' itself never changes. - Kataru Gayathri Priya\n"
+    ]
+
+    function newQuote() {
+        let randomNumber =Math.floor(Math.random() * (quotes.length));
+        document.getElementById('QuoteDisplay').innerHTML =quotes[randomNumber];
+    }
+    </script>
+</body>
+</html>
